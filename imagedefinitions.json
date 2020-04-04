@@ -1,6 +1,6 @@
 [
     {
-      "name": "nginx-server",
+      "name": "nginx-service",
       "imageUri": "nginx:latest"
     }
   ]
