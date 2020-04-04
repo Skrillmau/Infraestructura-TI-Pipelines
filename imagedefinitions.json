@@ -1,6 +1,6 @@
 [
     {
-      "name": "Infra-TI-Develop",
+      "name": "first-run-task-definition:2",
       "imageUri": "nginx:latest"
     }
   ]
