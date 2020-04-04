@@ -1,6 +1,6 @@
 [
     {
-      "name": "nginx-service",
+      "name": "Infra-TI-Develop",
       "imageUri": "nginx:latest"
     }
   ]
