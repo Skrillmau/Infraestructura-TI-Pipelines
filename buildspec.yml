@@ -9,3 +9,6 @@ phases:
   post_build:
     commands:
     - echo "Post Build phase"
+artifacts:
+  files:
+    - imagedefinitions.json
