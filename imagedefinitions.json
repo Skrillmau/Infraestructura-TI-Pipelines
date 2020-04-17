@@ -1,6 +1,6 @@
 [
     {
-      "name": "first-run-task-definition:2",
+      "name": "nginx-web-server-deploy",
       "imageUri": "nginx:latest"
     }
   ]
