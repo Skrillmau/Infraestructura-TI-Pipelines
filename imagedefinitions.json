@@ -1,6 +1,6 @@
 [
     {
-      "name": "nginx-service",
+      "name": "nginx-web-server-deploy:1",
       "imageUri": "nginx:latest"
     }
   ]
