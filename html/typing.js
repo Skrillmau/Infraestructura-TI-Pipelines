@@ -14,7 +14,7 @@ function autoType(elementClass, typingSpeed){
     thhis.css("opacity",1);
     thhis.prev().removeAttr("style");
     thhis.text("");
-    for(var i = 0; i < amntOfChars; i++){
+    for(var i = 0; i < amntOfChars; i){
       (function(i,char){
         setTimeout(function() {        
           newString += char;
