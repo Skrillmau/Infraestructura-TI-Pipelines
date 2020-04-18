@@ -1,0 +1,13 @@
+version: 0.0
+os: linux
+files:
+  - source: /index.html
+    destination: /usr/share/nginx/html/
+hooks:
+  BeforeInstall:
+    - commands:
+    - sudo yum update -y
+    - sudo amazon-linux-extras install nginx1 -y
+    - sudo systemctl start nginx
+  ApplicationStop:
+    - sudo systemctl stop nginx

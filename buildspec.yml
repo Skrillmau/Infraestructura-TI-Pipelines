@@ -1,16 +1,13 @@
 version: 0.2
-files:
-  - source: /index.html
-    destination: /usr/share/nginx/html/
+
 phases:
   pre_build:
     commands:
     - echo "Pre Build phase" 
-    - amazon-linux-extras install nginx1 -y
   build:
     commands:
     - echo "Build phase"
-    - systemctl start nginx
+
   post_build:
     commands:
     - echo "Post Build phase"
