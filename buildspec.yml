@@ -3,7 +3,8 @@ version: 0.2
 phases:
   pre_build:
     commands:
-    - echo "Pre Build phase" 
+    - echo "Pre Build phase"
+    - yum update -y 
   build:
     commands:
     - echo "Build phase"
