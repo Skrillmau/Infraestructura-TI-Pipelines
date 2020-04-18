@@ -13,5 +13,5 @@ phases:
     - echo "Post Build phase"
 artifacts:
   files:
-    - '*/'
+    - '**/*'
 name: s3-to-s3-latest-build.zip
