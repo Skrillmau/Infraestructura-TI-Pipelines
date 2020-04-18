@@ -5,9 +5,10 @@ files:
     destination: /usr/share/nginx/html/
 hooks:
   BeforeInstall:
-    - commands:
-    - sudo yum update -y
-    - sudo amazon-linux-extras install nginx1 -y
-    - sudo systemctl start nginx
+     - location: Scripts/install
+       timeout: 300
+       runas: root
   ApplicationStop:
-    - sudo systemctl stop nginx
+     - location: scripts/stop
+       timeout: 300
+       runas: root
