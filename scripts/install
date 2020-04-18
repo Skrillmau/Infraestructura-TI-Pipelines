@@ -3,4 +3,4 @@ sudo yum update -y
 sudo yum upgrade -y
 sudo amazon-linux-extras install nginx1 -y
 sudo rm /usr/share/nginx/html/index.html
-sudo systemctl start nginx
+
