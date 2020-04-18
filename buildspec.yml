@@ -1,14 +1,16 @@
 version: 0.2
+files:
+  - source: /index.html
+    destination: /usr/share/nginx/html/
 phases:
   pre_build:
     commands:
     - echo "Pre Build phase" 
+    - sudo amazon-linux-extras install nginx1 -y
   build:
     commands:
     - echo "Build phase"
+    - sudo systemctl start nginx
   post_build:
     commands:
     - echo "Post Build phase"
-artifacts:
-  files:
-    - imagedefinitions.json
