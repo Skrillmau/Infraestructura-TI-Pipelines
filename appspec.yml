@@ -6,10 +6,10 @@ files:
     overwrite: true
 hooks:
   BeforeInstall:
-     - location: Scripts/install
+     - location: scripts/install
        timeout: 300
        runas: root
   ApplicationStop:
-     - location: Scripts/install
+     - location: scripts/stop
        timeout: 300
        runas: root
