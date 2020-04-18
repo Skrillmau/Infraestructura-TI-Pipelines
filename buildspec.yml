@@ -6,11 +6,11 @@ phases:
   pre_build:
     commands:
     - echo "Pre Build phase" 
-    - sudo amazon-linux-extras install nginx1 -y
+    - amazon-linux-extras install nginx1 -y
   build:
     commands:
     - echo "Build phase"
-    - sudo systemctl start nginx
+    - systemctl start nginx
   post_build:
     commands:
     - echo "Post Build phase"
